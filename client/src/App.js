@@ -34,6 +34,10 @@ class App extends Component {
       }
     });
   }
+
+  componentWillUnmount() {
+    this.unsubscribe();
+  }
 }
 
 export default App;
